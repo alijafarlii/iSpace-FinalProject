@@ -369,6 +369,7 @@ def pay(request, model, id):
     airpodss = Airpods.objects.all()
     watches = Watch.objects.all()
     stores = Store.objects.all()
+    giftcards = Giftcards.objects.all()
     
     new_products = [
         ('macs', Mac.objects.first()),
@@ -378,6 +379,7 @@ def pay(request, model, id):
         ('airpods', Airpods.objects.first()),
         ('tv_homes', Tv_Home.objects.first()),
         ('accessories', Accessories.objects.first()),
+        ('giftcards', Giftcards.objects.first()),
     ]
 
     model_map = {
@@ -388,6 +390,7 @@ def pay(request, model, id):
         'airpods': Airpods,
         'tv_homes': Tv_Home,
         'accessories': Accessories,
+        'giftcards': Giftcards,
     }
 
     product_model = model_map.get(model)
@@ -411,6 +414,7 @@ def pay(request, model, id):
         'tv_homes': tv_homes,
         'airpodss': airpodss,
         'watches': watches,
+        'giftcards': giftcards,
     
     }
     return render(request, 'pay.html', context)

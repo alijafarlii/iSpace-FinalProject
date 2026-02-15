@@ -216,7 +216,7 @@
 <div style="display: flex; padding-bottom: 50px;">
 
 <div class="">
-  <a class="a" href="">
+  <a class="a" href="{% url 'core:offers' %}">
   <div class="card2" style="margin-left: 50px;">
   <div class="card-body">
     <h6 class="h6" style="color: #5856d6;">BACK TO SCHOOL</h6>
@@ -228,7 +228,7 @@
 </div>
 
 <div class="">
-  <a class="a" href="">
+  <a class="a" href="{% url 'core:stores' %}">
   <div class="card2" style="margin-left: 50px;">
   <div class="card-body">
     <h6 class="h6" style="color: #707070;">PICKUP</h6>
@@ -240,7 +240,7 @@
 </div>
 
 <div class="">
-  <a class="a" href="">
+  <a class="a" href="{% url 'core:financing' %}">
   <div class="card2" style="margin-left: 50px;">
   <div class="card-body">
     <h6 class="h6" style="color: #0071BC;">FINANCING</h6>
@@ -252,7 +252,7 @@
 </div>
 
 <div class="">
-  <a class="a" href="">
+  <a class="a" href="{% url 'core:offers' %}">
   <div class="card2" style="margin-left: 50px;">
   <div class="card-body">
     <h6 class="h6" style="color: #008900;">SALE</h6>
@@ -264,7 +264,7 @@
 </div>
 
 <div class="">
-  <a class="a" href="">
+  <a class="a" href="{% url 'core:trade_in' %}">
   <div class="card2" style="margin-left: 50px;">
   <div class="card-body">
     <h6 class="h6" style="color: #0071BC;">TRADE-IN</h6>
@@ -588,7 +588,7 @@
 
  <div style="padding-bottom: 50px;">
     <div class="carousel-track" id="track">
-      {% for accessories in accessoriess %}
+      {% for accessories in accessories %}
 <div>
   <div class="card" style="width: 18rem; margin-left: 45px;">
   <a class="card-a" href="{% url 'core:pay' 'accessories' accessories.id %}">

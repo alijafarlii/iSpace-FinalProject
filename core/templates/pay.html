@@ -123,7 +123,9 @@
     <div style="display: flex;">
     <h4 class="credit-h4h4">Total order amount: <br>{{ product.price }} ₼</h4>
     <button class="credit-button">Buy now</button>
+    <a href="{% url 'core:financing' %}">
     <button class="credit-button2">Start financing</button>
+    </a>
 
     </div>
 </div>
@@ -203,7 +205,7 @@
         <button class="pay-learn">Learn more about Trade-in <svg style="margin-left: -5px;" width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="product-price_button-icon" stroke-color="currentColor" fill-color="currentColor" data-v-e79eec49=""><path d="M9.10742 14.1333L13.4835 10.3125L9.10742 6.49167L10.458 5.3125L16.1846 10.3125L10.458 15.3125L9.10742 14.1333Z" fill="currentColor"></path></svg></button>
         </a>
         <br>
-        <a class="pay-buttona" href="">
+        <a class="pay-buttona" href="{% url 'core:trade_in' %}">
             <button class="pay-button">Start Trade-in</button>
         </a>
         <a  class="pay-button2a" href="">
@@ -236,7 +238,7 @@
       <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body">
         <p class="cardp">Pay with a VISA card at an iSpace offline store and get a 10% save. Valid only when paying with Apple Pay or Google Pay. The offer cannot be combined with installment plans.</p>
-        <a class="carda" href="list.html">View all products</a>
+        <a class="carda" href="{% url 'core:list' %}">View all products</a>
         </div>
       </div>
   <hr style="background-color: #7D7D7D; opacity: 0.2; width: 280px; margin-top: 10px; height: 1.3px; margin-left: 2px !important;">
@@ -256,7 +258,7 @@
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
         <div class="card-body"> 
         <p class="cardp">Check out our financing options.</p>
-        <a class="carda" href="">Learn more</a>
+        <a class="carda" href="{% url 'core:financing' %  }">Learn more</a>
         </div>
       </div>
   <hr style="background-color: #7D7D7D; opacity: 0.2; width: 280px; margin-top: 10px; height: 1.3px; margin-left: 2px !important;">
@@ -275,7 +277,7 @@
       <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
         <div class="card-body"> 
         <p class="cardp">Technical support for all Apple products.</p>
-        <a class="carda" href="">Learn more</a>
+        <a class="carda" href="{% url 'core:warranty' %}">Learn more</a>
         </div>
       </div>
   <hr style="background-color: #7D7D7D; opacity: 0.2; width: 280px; margin-top: 10px; height: 1.3px; margin-left: 2px !important;">
@@ -294,7 +296,7 @@
       <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
         <div class="card-body"> 
         <p class="cardp">Bring your old iPhone. Get a discount on new Apple equipment.</p>
-        <a class="carda" href="">Learn more about Trade-in</a>
+        <a class="carda" href="{% url 'core:trade_in' %}  ">Learn more about Trade-in</a>
         </div>
       </div>
   <hr style="background-color: #7D7D7D; opacity: 0.2; width: 280px; margin-top: 10px; height: 1.3px; margin-left: 2px !important;">
@@ -313,7 +315,7 @@
       <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
         <div class="card-body"> 
         <p class="cardp">Free shipping for orders over 300 AZN, fast delivery in Baku for online payments.</p>
-        <a class="carda" href="">Learn more</a>
+        <a class="carda" href="{% url 'core:stores' %}">Learn more</a>
         </div>
       </div>
   <hr style="background-color: #7D7D7D; opacity: 0.2; width: 280px; margin-top: 10px; height: 1.3px; margin-left: 2px !important;">

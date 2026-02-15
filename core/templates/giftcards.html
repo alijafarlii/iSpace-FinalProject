@@ -42,8 +42,8 @@
             <div style="margin-top: 70px; margin-left: 70px;">
             <h2 style="margin-top: 100px;" class="card-h2">{{ giftcard.name }}</h2>
             <p class="card-p">{{ giftcard.description }}</p>
-            <a href="">
-            <button class="card-button">Notify me</button>
+            <a href="{% url 'core:pay' 'giftcards' giftcard.id %}" style="outline: none; text-decoration: none;">
+            <button class="card-button">Buy now</button>
             </a>
             </div>
 		</div>

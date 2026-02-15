@@ -915,6 +915,43 @@ input[type=checkbox] {
 
 }
 
+.inputincard2 {
+  height: 50px;
+  width: 130px;
+  margin-top: -20px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  padding-left: 7px;
+  caret-color: #0071e3;
+  color: black;
+}
+
+.inputincard2::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+.inputincard2:focus {
+  outline: 1.5px solid #0071e3;
+
+}
+
+.salam {
+  margin-top: -20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #121212BF;
+  width: 70px;
+  height: 35px;
+  transition: 0.3s;
+}
+
+.salam:hover {
+  transition: 0.3s;
+  background-color: #0360bd !important;
+}
+
 .pagination {
   border: none;
 }
